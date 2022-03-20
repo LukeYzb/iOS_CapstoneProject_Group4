@@ -76,10 +76,11 @@
 		FA12C76727E4F6CF00798941 /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				FA376E4727E7ECBE005C5C97 /* Helpers */,
 				FA12C77C27E4F71B00798941 /* Models */,
 				FA12C77D27E4F72400798941 /* Views */,
 				FA12C77E27E4F73200798941 /* Controllers */,
-				FA12C77F27E4F73B00798941 /* SupportingMaterials */,
+				FA12C77F27E4F73B00798941 /* SupportingFiles */,
 			);
 			path = CapstoneProject;
 			sourceTree = "<group>";
@@ -96,8 +97,8 @@
 		FA12C77D27E4F72400798941 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C76E27E4F6CF00798941 /* Main.storyboard */,
 				FA12C77327E4F6CF00798941 /* LaunchScreen.storyboard */,
+				FA376E4B27E7EDE7005C5C97 /* Storyboards */,
 				FA12C78227E4F7D500798941 /* TableViews */,
 				FA12C78027E4F7A000798941 /* TableViewCells */,
 			);
@@ -114,7 +115,7 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		FA12C77F27E4F73B00798941 /* SupportingMaterials */ = {
+		FA12C77F27E4F73B00798941 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				FA12C77627E4F6CF00798941 /* Info.plist */,
@@ -122,7 +123,7 @@
 				FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */,
 				FA12C76827E4F6CF00798941 /* AppDelegate.swift */,
 			);
-			name = SupportingMaterials;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		FA12C78027E4F7A000798941 /* TableViewCells */ = {
@@ -159,6 +160,21 @@
 				FA12C79227E5223000798941 /* ContactListViewController.swift */,
 			);
 			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		FA376E4727E7ECBE005C5C97 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FA376E4B27E7EDE7005C5C97 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C76E27E4F6CF00798941 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
