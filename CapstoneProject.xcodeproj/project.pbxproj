@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA12C76927E4F6CF00798941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76827E4F6CF00798941 /* AppDelegate.swift */; };
+		FA12C76B27E4F6CF00798941 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */; };
+		FA12C76D27E4F6CF00798941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76C27E4F6CF00798941 /* ViewController.swift */; };
+		FA12C77027E4F6CF00798941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12C76E27E4F6CF00798941 /* Main.storyboard */; };
+		FA12C77227E4F6CF00798941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA12C77127E4F6CF00798941 /* Assets.xcassets */; };
+		FA12C77527E4F6CF00798941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12C77327E4F6CF00798941 /* LaunchScreen.storyboard */; };
+		FA12C78A27E4F96100798941 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78827E4F96100798941 /* ChatTableViewCell.swift */; };
+		FA12C78B27E4F96100798941 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C78927E4F96100798941 /* ChatTableViewCell.xib */; };
+		FA12C78D27E4F98D00798941 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78C27E4F98D00798941 /* Chat.swift */; };
+		FA12C79027E5000D00798941 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78E27E5000D00798941 /* ChatViewController.swift */; };
+		FA12C79127E5000D00798941 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C78F27E5000D00798941 /* ChatViewController.xib */; };
+		FA12C79427E5223000798941 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79227E5223000798941 /* ContactListViewController.swift */; };
+		FA12C79527E5223000798941 /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C79327E5223000798941 /* ContactListViewController.xib */; };
+		FA12C79827E524B200798941 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79627E524B200798941 /* ContactListTableViewCell.swift */; };
+		FA12C79927E524B200798941 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C79727E524B200798941 /* ContactListTableViewCell.xib */; };
+		FA12C79B27E525E400798941 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79A27E525E400798941 /* ContactList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA12C76527E4F6CF00798941 /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA12C76827E4F6CF00798941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA12C76C27E4F6CF00798941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA12C76F27E4F6CF00798941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA12C77127E4F6CF00798941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA12C77427E4F6CF00798941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA12C77627E4F6CF00798941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA12C78827E4F96100798941 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		FA12C78927E4F96100798941 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		FA12C78C27E4F98D00798941 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		FA12C78E27E5000D00798941 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FA12C78F27E5000D00798941 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		FA12C79227E5223000798941 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		FA12C79327E5223000798941 /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
+		FA12C79627E524B200798941 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		FA12C79727E524B200798941 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
+		FA12C79A27E525E400798941 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA12C76227E4F6CF00798941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA12C75C27E4F6CF00798941 = {
+			isa = PBXGroup;
+			children = (
+				FA12C76727E4F6CF00798941 /* CapstoneProject */,
+				FA12C76627E4F6CF00798941 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA12C76627E4F6CF00798941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C76527E4F6CF00798941 /* CapstoneProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA12C76727E4F6CF00798941 /* CapstoneProject */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C77C27E4F71B00798941 /* Models */,
+				FA12C77D27E4F72400798941 /* Views */,
+				FA12C77E27E4F73200798941 /* Controllers */,
+				FA12C77F27E4F73B00798941 /* SupportingMaterials */,
+			);
+			path = CapstoneProject;
+			sourceTree = "<group>";
+		};
+		FA12C77C27E4F71B00798941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C78C27E4F98D00798941 /* Chat.swift */,
+				FA12C79A27E525E400798941 /* ContactList.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA12C77D27E4F72400798941 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C76E27E4F6CF00798941 /* Main.storyboard */,
+				FA12C77327E4F6CF00798941 /* LaunchScreen.storyboard */,
+				FA12C78227E4F7D500798941 /* TableViews */,
+				FA12C78027E4F7A000798941 /* TableViewCells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA12C77E27E4F73200798941 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C76C27E4F6CF00798941 /* ViewController.swift */,
+				FA12C78327E4F7F100798941 /* TableViewControllers */,
+				FA12C78127E4F7AE00798941 /* TableViewCellControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA12C77F27E4F73B00798941 /* SupportingMaterials */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C77627E4F6CF00798941 /* Info.plist */,
+				FA12C77127E4F6CF00798941 /* Assets.xcassets */,
+				FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */,
+				FA12C76827E4F6CF00798941 /* AppDelegate.swift */,
+			);
+			name = SupportingMaterials;
+			sourceTree = "<group>";
+		};
+		FA12C78027E4F7A000798941 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C78927E4F96100798941 /* ChatTableViewCell.xib */,
+				FA12C79727E524B200798941 /* ContactListTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FA12C78127E4F7AE00798941 /* TableViewCellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C78827E4F96100798941 /* ChatTableViewCell.swift */,
+				FA12C79627E524B200798941 /* ContactListTableViewCell.swift */,
+			);
+			name = TableViewCellControllers;
+			sourceTree = "<group>";
+		};
+		FA12C78227E4F7D500798941 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C78F27E5000D00798941 /* ChatViewController.xib */,
+				FA12C79327E5223000798941 /* ContactListViewController.xib */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
+		FA12C78327E4F7F100798941 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12C78E27E5000D00798941 /* ChatViewController.swift */,
+				FA12C79227E5223000798941 /* ContactListViewController.swift */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA12C76427E4F6CF00798941 /* CapstoneProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA12C77927E4F6CF00798941 /* Build configuration list for PBXNativeTarget "CapstoneProject" */;
+			buildPhases = (
+				FA12C76127E4F6CF00798941 /* Sources */,
+				FA12C76227E4F6CF00798941 /* Frameworks */,
+				FA12C76327E4F6CF00798941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapstoneProject;
+			productName = CapstoneProject;
+			productReference = FA12C76527E4F6CF00798941 /* CapstoneProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA12C75D27E4F6CF00798941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FA12C76427E4F6CF00798941 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = FA12C76027E4F6CF00798941 /* Build configuration list for PBXProject "CapstoneProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA12C75C27E4F6CF00798941;
+			productRefGroup = FA12C76627E4F6CF00798941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA12C76427E4F6CF00798941 /* CapstoneProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA12C76327E4F6CF00798941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA12C77527E4F6CF00798941 /* LaunchScreen.storyboard in Resources */,
+				FA12C79527E5223000798941 /* ContactListViewController.xib in Resources */,
+				FA12C77227E4F6CF00798941 /* Assets.xcassets in Resources */,
+				FA12C79127E5000D00798941 /* ChatViewController.xib in Resources */,
+				FA12C78B27E4F96100798941 /* ChatTableViewCell.xib in Resources */,
+				FA12C77027E4F6CF00798941 /* Main.storyboard in Resources */,
+				FA12C79927E524B200798941 /* ContactListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA12C76127E4F6CF00798941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA12C76D27E4F6CF00798941 /* ViewController.swift in Sources */,
+				FA12C78D27E4F98D00798941 /* Chat.swift in Sources */,
+				FA12C76927E4F6CF00798941 /* AppDelegate.swift in Sources */,
+				FA12C79027E5000D00798941 /* ChatViewController.swift in Sources */,
+				FA12C79827E524B200798941 /* ContactListTableViewCell.swift in Sources */,
+				FA12C78A27E4F96100798941 /* ChatTableViewCell.swift in Sources */,
+				FA12C79B27E525E400798941 /* ContactList.swift in Sources */,
+				FA12C79427E5223000798941 /* ContactListViewController.swift in Sources */,
+				FA12C76B27E4F6CF00798941 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA12C76E27E4F6CF00798941 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA12C76F27E4F6CF00798941 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA12C77327E4F6CF00798941 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA12C77427E4F6CF00798941 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA12C77727E4F6CF00798941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA12C77827E4F6CF00798941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA12C77A27E4F6CF00798941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HSJ7Q73Q9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapstoneProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zhibin.CapstoneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA12C77B27E4F6CF00798941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HSJ7Q73Q9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapstoneProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zhibin.CapstoneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA12C76027E4F6CF00798941 /* Build configuration list for PBXProject "CapstoneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA12C77727E4F6CF00798941 /* Debug */,
+				FA12C77827E4F6CF00798941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA12C77927E4F6CF00798941 /* Build configuration list for PBXNativeTarget "CapstoneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA12C77A27E4F6CF00798941 /* Debug */,
+				FA12C77B27E4F6CF00798941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA12C75D27E4F6CF00798941 /* Project object */;
+}
