@@ -14,21 +14,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func chatPlanButton(_ sender: UIButton) {
-        //show chat plan page with navigation bar
-        let nextVC=ChatViewController()
+    @IBAction func startMergingButton(_ sender: UIButton) {
+        //show 'first paper' page with navigation bar
+        let nextVC=FirstPaperViewController()
         let navVC=UINavigationController(rootViewController: nextVC)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
     }
     
-    @IBAction func contactListButton(_ sender: UIButton) {
-        //show contact list page with navigation bar
-        let nextVC=ContactListViewController()
+    @IBAction func registerButton(_ sender: UIButton) {
+        //show 'register' page with navigation bar
+        let nextVC=RegisterViewController()
         let navVC=UINavigationController(rootViewController: nextVC)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
     }
+    
     
 }
 

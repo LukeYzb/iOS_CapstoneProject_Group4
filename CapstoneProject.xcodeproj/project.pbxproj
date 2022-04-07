@@ -13,16 +13,18 @@
 		FA12C77027E4F6CF00798941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12C76E27E4F6CF00798941 /* Main.storyboard */; };
 		FA12C77227E4F6CF00798941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA12C77127E4F6CF00798941 /* Assets.xcassets */; };
 		FA12C77527E4F6CF00798941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12C77327E4F6CF00798941 /* LaunchScreen.storyboard */; };
-		FA12C78A27E4F96100798941 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78827E4F96100798941 /* ChatTableViewCell.swift */; };
-		FA12C78B27E4F96100798941 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C78927E4F96100798941 /* ChatTableViewCell.xib */; };
-		FA12C78D27E4F98D00798941 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78C27E4F98D00798941 /* Chat.swift */; };
-		FA12C79027E5000D00798941 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C78E27E5000D00798941 /* ChatViewController.swift */; };
-		FA12C79127E5000D00798941 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C78F27E5000D00798941 /* ChatViewController.xib */; };
-		FA12C79427E5223000798941 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79227E5223000798941 /* ContactListViewController.swift */; };
-		FA12C79527E5223000798941 /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C79327E5223000798941 /* ContactListViewController.xib */; };
-		FA12C79827E524B200798941 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79627E524B200798941 /* ContactListTableViewCell.swift */; };
-		FA12C79927E524B200798941 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12C79727E524B200798941 /* ContactListTableViewCell.xib */; };
-		FA12C79B27E525E400798941 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C79A27E525E400798941 /* ContactList.swift */; };
+		FA5C8FC627FF8ED10074BC3A /* FirstPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FC427FF8ED10074BC3A /* FirstPaperViewController.swift */; };
+		FA5C8FC727FF8ED10074BC3A /* FirstPaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FC527FF8ED10074BC3A /* FirstPaperViewController.xib */; };
+		FA5C8FCC27FF906F0074BC3A /* SecondPaperListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FCA27FF906F0074BC3A /* SecondPaperListViewController.swift */; };
+		FA5C8FCD27FF906F0074BC3A /* SecondPaperListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FCB27FF906F0074BC3A /* SecondPaperListViewController.xib */; };
+		FA5C8FCF27FF91120074BC3A /* SecondPaperList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FCE27FF91120074BC3A /* SecondPaperList.swift */; };
+		FA5C8FD627FF924B0074BC3A /* SecondPaperListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FD427FF924B0074BC3A /* SecondPaperListTableViewCell.swift */; };
+		FA5C8FD727FF924B0074BC3A /* SecondPaperListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FD527FF924B0074BC3A /* SecondPaperListTableViewCell.xib */; };
+		FA5C8FD927FF94FD0074BC3A /* MergeFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FD827FF94FD0074BC3A /* MergeFiles.swift */; };
+		FA5C8FE427FF977F0074BC3A /* SecondPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */; };
+		FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */; };
+		FA5C8FE827FF99730074BC3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */; };
+		FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +36,18 @@
 		FA12C77127E4F6CF00798941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA12C77427E4F6CF00798941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA12C77627E4F6CF00798941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA12C78827E4F96100798941 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
-		FA12C78927E4F96100798941 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
-		FA12C78C27E4F98D00798941 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		FA12C78E27E5000D00798941 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		FA12C78F27E5000D00798941 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
-		FA12C79227E5223000798941 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
-		FA12C79327E5223000798941 /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
-		FA12C79627E524B200798941 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
-		FA12C79727E524B200798941 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
-		FA12C79A27E525E400798941 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		FA5C8FC427FF8ED10074BC3A /* FirstPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPaperViewController.swift; sourceTree = "<group>"; };
+		FA5C8FC527FF8ED10074BC3A /* FirstPaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPaperViewController.xib; sourceTree = "<group>"; };
+		FA5C8FCA27FF906F0074BC3A /* SecondPaperListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPaperListViewController.swift; sourceTree = "<group>"; };
+		FA5C8FCB27FF906F0074BC3A /* SecondPaperListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPaperListViewController.xib; sourceTree = "<group>"; };
+		FA5C8FCE27FF91120074BC3A /* SecondPaperList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPaperList.swift; sourceTree = "<group>"; };
+		FA5C8FD427FF924B0074BC3A /* SecondPaperListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPaperListTableViewCell.swift; sourceTree = "<group>"; };
+		FA5C8FD527FF924B0074BC3A /* SecondPaperListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPaperListTableViewCell.xib; sourceTree = "<group>"; };
+		FA5C8FD827FF94FD0074BC3A /* MergeFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeFiles.swift; sourceTree = "<group>"; };
+		FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPaperViewController.swift; sourceTree = "<group>"; };
+		FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPaperViewController.xib; sourceTree = "<group>"; };
+		FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +92,7 @@
 		FA12C77C27E4F71B00798941 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C78C27E4F98D00798941 /* Chat.swift */,
-				FA12C79A27E525E400798941 /* ContactList.swift */,
+				FA5C8FCE27FF91120074BC3A /* SecondPaperList.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -129,8 +132,7 @@
 		FA12C78027E4F7A000798941 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C78927E4F96100798941 /* ChatTableViewCell.xib */,
-				FA12C79727E524B200798941 /* ContactListTableViewCell.xib */,
+				FA5C8FD527FF924B0074BC3A /* SecondPaperListTableViewCell.xib */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -138,8 +140,7 @@
 		FA12C78127E4F7AE00798941 /* TableViewCellControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C78827E4F96100798941 /* ChatTableViewCell.swift */,
-				FA12C79627E524B200798941 /* ContactListTableViewCell.swift */,
+				FA5C8FD427FF924B0074BC3A /* SecondPaperListTableViewCell.swift */,
 			);
 			name = TableViewCellControllers;
 			sourceTree = "<group>";
@@ -147,8 +148,10 @@
 		FA12C78227E4F7D500798941 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C78F27E5000D00798941 /* ChatViewController.xib */,
-				FA12C79327E5223000798941 /* ContactListViewController.xib */,
+				FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */,
+				FA5C8FC527FF8ED10074BC3A /* FirstPaperViewController.xib */,
+				FA5C8FCB27FF906F0074BC3A /* SecondPaperListViewController.xib */,
+				FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */,
 			);
 			name = TableViews;
 			sourceTree = "<group>";
@@ -156,8 +159,10 @@
 		FA12C78327E4F7F100798941 /* TableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA12C78E27E5000D00798941 /* ChatViewController.swift */,
-				FA12C79227E5223000798941 /* ContactListViewController.swift */,
+				FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */,
+				FA5C8FC427FF8ED10074BC3A /* FirstPaperViewController.swift */,
+				FA5C8FCA27FF906F0074BC3A /* SecondPaperListViewController.swift */,
+				FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */,
 			);
 			name = TableViewControllers;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		FA376E4727E7ECBE005C5C97 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FA5C8FD827FF94FD0074BC3A /* MergeFiles.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -236,12 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA12C77527E4F6CF00798941 /* LaunchScreen.storyboard in Resources */,
-				FA12C79527E5223000798941 /* ContactListViewController.xib in Resources */,
 				FA12C77227E4F6CF00798941 /* Assets.xcassets in Resources */,
-				FA12C79127E5000D00798941 /* ChatViewController.xib in Resources */,
-				FA12C78B27E4F96100798941 /* ChatTableViewCell.xib in Resources */,
+				FA5C8FCD27FF906F0074BC3A /* SecondPaperListViewController.xib in Resources */,
+				FA5C8FC727FF8ED10074BC3A /* FirstPaperViewController.xib in Resources */,
 				FA12C77027E4F6CF00798941 /* Main.storyboard in Resources */,
-				FA12C79927E524B200798941 /* ContactListTableViewCell.xib in Resources */,
+				FA5C8FD727FF924B0074BC3A /* SecondPaperListTableViewCell.xib in Resources */,
+				FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */,
+				FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,15 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5C8FCF27FF91120074BC3A /* SecondPaperList.swift in Sources */,
+				FA5C8FE827FF99730074BC3A /* RegisterViewController.swift in Sources */,
 				FA12C76D27E4F6CF00798941 /* ViewController.swift in Sources */,
-				FA12C78D27E4F98D00798941 /* Chat.swift in Sources */,
 				FA12C76927E4F6CF00798941 /* AppDelegate.swift in Sources */,
-				FA12C79027E5000D00798941 /* ChatViewController.swift in Sources */,
-				FA12C79827E524B200798941 /* ContactListTableViewCell.swift in Sources */,
-				FA12C78A27E4F96100798941 /* ChatTableViewCell.swift in Sources */,
-				FA12C79B27E525E400798941 /* ContactList.swift in Sources */,
-				FA12C79427E5223000798941 /* ContactListViewController.swift in Sources */,
+				FA5C8FD627FF924B0074BC3A /* SecondPaperListTableViewCell.swift in Sources */,
+				FA5C8FC627FF8ED10074BC3A /* FirstPaperViewController.swift in Sources */,
 				FA12C76B27E4F6CF00798941 /* SceneDelegate.swift in Sources */,
+				FA5C8FE427FF977F0074BC3A /* SecondPaperViewController.swift in Sources */,
+				FA5C8FD927FF94FD0074BC3A /* MergeFiles.swift in Sources */,
+				FA5C8FCC27FF906F0074BC3A /* SecondPaperListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

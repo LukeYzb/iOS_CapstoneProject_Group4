@@ -1,16 +1,16 @@
 //
-//  ChatTableViewCell.swift
+//  SecondPaperListTableViewCell.swift
 //  CapstoneProject
 //
-//  Created by 志斌Zhibin 于Yu on 2022-03-18.
+//  Created by 志斌Zhibin 于Yu on 2022-04-07.
 //
 
 import UIKit
 
-class ChatTableViewCell: UITableViewCell {
+class SecondPaperListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

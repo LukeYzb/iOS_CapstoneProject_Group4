@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListViewController" customModule="CapstoneProject" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondPaperListViewController" customModule="CapstoneProject" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="U8l-m5-WeY" id="af4-DT-lLj"/>
+                <outlet property="tableView" destination="Xsp-US-YPT" id="s78-g6-gJz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U8l-m5-WeY">
-                    <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xsp-US-YPT">
+                    <rect key="frame" x="87" y="287" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-lP-KBQ">
+                    <rect key="frame" x="135" y="525" width="144" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Add Second Paper"/>
+                    <connections>
+                        <action selector="addSecondPaperButton:" destination="-1" eventType="touchUpInside" id="mwP-W2-mcQ"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="U8l-m5-WeY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Jyx-wM-4Cj"/>
-                <constraint firstItem="U8l-m5-WeY" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="bNq-zo-X5X"/>
-                <constraint firstItem="U8l-m5-WeY" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="pck-zt-DIm"/>
-                <constraint firstItem="U8l-m5-WeY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="tQL-Fv-VKf"/>
-            </constraints>
-            <point key="canvasLocation" x="132" y="76"/>
+            <point key="canvasLocation" x="132" y="60"/>
         </view>
     </objects>
     <resources>

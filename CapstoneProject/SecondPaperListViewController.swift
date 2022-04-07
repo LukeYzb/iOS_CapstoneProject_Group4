@@ -1,16 +1,16 @@
 //
-//  ContactListViewController.swift
+//  SecondPaperListViewController.swift
 //  CapstoneProject
 //
-//  Created by 志斌Zhibin 于Yu on 2022-03-18.
+//  Created by 志斌Zhibin 于Yu on 2022-04-07.
 //
 
 import UIKit
 
-class ContactListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var contactArray: [ContactList] = [
-        ContactList(name: "Zhibin Yu", phone: "4377702887")
+class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    var secondPaperArray: [SecondPaperList] = [
+        SecondPaperList(time: "17:41", name: "Zhibin Yu")
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -22,14 +22,14 @@ class ContactListViewController: UIViewController, UITableViewDelegate, UITableV
         
         //manage navigation bar
         //show title
-        navigationItem.title = "Contact List"
+        navigationItem.title = "Second Paper List"
         //show back button on top left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(backButtonPressed))
         
         //set tableview
         tableView.delegate=self
         tableView.dataSource=self
-        tableView.register(UINib(nibName: "ContactListTableViewCell", bundle: nil), forCellReuseIdentifier: "ContactCell")
+        tableView.register(UINib(nibName: "SecondPaperListTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondPaperCell")
         
     }
     
@@ -40,18 +40,27 @@ class ContactListViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactArray.count
+        return secondPaperArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! ContactListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SecondPaperCell", for: indexPath) as! SecondPaperListTableViewCell
         
-        cell.nameLabel.text=contactArray[indexPath.row].name
-        cell.phoneLabel.text=contactArray[indexPath.row].phone
+        cell.nameLabel.text=secondPaperArray[indexPath.row].name
+        cell.timeLabel.text=secondPaperArray[indexPath.row].time
         
         return cell
     }
     
+    @IBAction func addSecondPaperButton(_ sender: UIButton) {
+        //show 'add second paper' page with navigation bar
+        let nextVC=SecondPaperViewController()
+        let navVC=UINavigationController(rootViewController: nextVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true, completion: nil)
+    }
+
+
     /*
     // MARK: - Navigation
 
