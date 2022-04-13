@@ -25,6 +25,8 @@
 		FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */; };
 		FA5C8FE827FF99730074BC3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */; };
 		FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */; };
+		FABBEE4B28076C4F005F0199 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBEE4928076C4F005F0199 /* ResultViewController.swift */; };
+		FABBEE4C28076C4F005F0199 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABBEE4A28076C4F005F0199 /* ResultViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPaperViewController.xib; sourceTree = "<group>"; };
 		FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FABBEE4928076C4F005F0199 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FABBEE4A28076C4F005F0199 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 				FA5C8FC527FF8ED10074BC3A /* FirstPaperViewController.xib */,
 				FA5C8FCB27FF906F0074BC3A /* SecondPaperListViewController.xib */,
 				FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */,
+				FABBEE4A28076C4F005F0199 /* ResultViewController.xib */,
 			);
 			name = TableViews;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				FA5C8FC427FF8ED10074BC3A /* FirstPaperViewController.swift */,
 				FA5C8FCA27FF906F0074BC3A /* SecondPaperListViewController.swift */,
 				FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */,
+				FABBEE4928076C4F005F0199 /* ResultViewController.swift */,
 			);
 			name = TableViewControllers;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 				FA12C77027E4F6CF00798941 /* Main.storyboard in Resources */,
 				FA5C8FD727FF924B0074BC3A /* SecondPaperListTableViewCell.xib in Resources */,
 				FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */,
+				FABBEE4C28076C4F005F0199 /* ResultViewController.xib in Resources */,
 				FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				FA5C8FE427FF977F0074BC3A /* SecondPaperViewController.swift in Sources */,
 				FA5C8FD927FF94FD0074BC3A /* MergeFiles.swift in Sources */,
 				FA5C8FCC27FF906F0074BC3A /* SecondPaperListViewController.swift in Sources */,
+				FABBEE4B28076C4F005F0199 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
