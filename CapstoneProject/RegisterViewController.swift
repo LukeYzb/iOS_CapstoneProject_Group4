@@ -26,7 +26,12 @@ class RegisterViewController: UIViewController {
     func backButtonPressed() {
         dismiss(animated: true, completion: nil)
     }
-
+    
+    //press register button: login page
+    @IBAction func registerButton(_ sender: UIButton) {
+        
+    }
+    
 
     /*
     // MARK: - Navigation

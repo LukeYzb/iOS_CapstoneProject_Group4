@@ -23,6 +23,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="Register"/>
+                    <connections>
+                        <action selector="registerButton:" destination="-1" eventType="touchUpInside" id="VGY-zr-nZ8"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1n-Vr-7Uu">
                     <rect key="frame" x="159" y="326" width="97" height="34"/>
