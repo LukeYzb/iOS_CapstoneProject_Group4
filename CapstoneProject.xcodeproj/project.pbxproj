@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8B1412528084A59006D3D65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1412428084A59006D3D65 /* LoginViewController.swift */; };
 		FA12C76927E4F6CF00798941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76827E4F6CF00798941 /* AppDelegate.swift */; };
 		FA12C76B27E4F6CF00798941 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */; };
 		FA12C76D27E4F6CF00798941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12C76C27E4F6CF00798941 /* ViewController.swift */; };
@@ -24,12 +25,13 @@
 		FA5C8FE427FF977F0074BC3A /* SecondPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */; };
 		FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */; };
 		FA5C8FE827FF99730074BC3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */; };
-		FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */; };
+		FA5C8FE927FF99730074BC3A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE727FF99730074BC3A /* LoginViewController.xib */; };
 		FABBEE4B28076C4F005F0199 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBEE4928076C4F005F0199 /* ResultViewController.swift */; };
 		FABBEE4C28076C4F005F0199 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABBEE4A28076C4F005F0199 /* ResultViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8B1412428084A59006D3D65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA12C76527E4F6CF00798941 /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA12C76827E4F6CF00798941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA12C76A27E4F6CF00798941 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		FA5C8FE227FF977F0074BC3A /* SecondPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPaperViewController.swift; sourceTree = "<group>"; };
 		FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPaperViewController.xib; sourceTree = "<group>"; };
 		FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FA5C8FE727FF99730074BC3A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FABBEE4928076C4F005F0199 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		FABBEE4A28076C4F005F0199 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +154,7 @@
 		FA12C78227E4F7D500798941 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */,
+				FA5C8FE727FF99730074BC3A /* LoginViewController.xib */,
 				FA5C8FC527FF8ED10074BC3A /* FirstPaperViewController.xib */,
 				FA5C8FCB27FF906F0074BC3A /* SecondPaperListViewController.xib */,
 				FA5C8FE327FF977F0074BC3A /* SecondPaperViewController.xib */,
@@ -164,6 +166,7 @@
 		FA12C78327E4F7F100798941 /* TableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8B1412428084A59006D3D65 /* LoginViewController.swift */,
 				FA5C8FE627FF99730074BC3A /* RegisterViewController.swift */,
 				FA5C8FC427FF8ED10074BC3A /* FirstPaperViewController.swift */,
 				FA5C8FCA27FF906F0074BC3A /* SecondPaperListViewController.swift */,
@@ -255,7 +258,7 @@
 				FA5C8FD727FF924B0074BC3A /* SecondPaperListTableViewCell.xib in Resources */,
 				FA5C8FE527FF977F0074BC3A /* SecondPaperViewController.xib in Resources */,
 				FABBEE4C28076C4F005F0199 /* ResultViewController.xib in Resources */,
-				FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */,
+				FA5C8FE927FF99730074BC3A /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B1412528084A59006D3D65 /* LoginViewController.swift in Sources */,
 				FA5C8FCF27FF91120074BC3A /* SecondPaperList.swift in Sources */,
 				FA5C8FE827FF99730074BC3A /* RegisterViewController.swift in Sources */,
 				FA12C76D27E4F6CF00798941 /* ViewController.swift in Sources */,
