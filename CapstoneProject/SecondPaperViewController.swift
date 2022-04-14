@@ -7,8 +7,16 @@
 
 import UIKit
 
-class SecondPaperViewController: UIViewController {
 
+protocol AddSecondPaperDelegate {
+    func addSecondPaper(secondPaper: SecondPaperList)
+}
+
+
+class SecondPaperViewController: UIViewController {
+    var delegate: AddSecondPaperDelegate?
+    @IBOutlet weak var secondPaperName: UITextField!
+    @IBOutlet weak var secondPaper: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +35,17 @@ class SecondPaperViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-
+    @IBAction func onAddButtonClicked(_ sender: Any) {
+        let dateFormatter : DateFormatter = DateFormatter()
+        //  dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "HH:mm"
+        let date = Date()
+        let dateString = dateFormatter.string(from: date)
+        
+        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? ""))
+        
+    }
+    
     /*
     // MARK: - Navigation
 

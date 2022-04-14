@@ -54,10 +54,17 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBAction func addSecondPaperButton(_ sender: UIButton) {
         //show 'add second paper' page with navigation bar
-        let nextVC=SecondPaperViewController()
-        let navVC=UINavigationController(rootViewController: nextVC)
-        navVC.modalPresentationStyle = .fullScreen
-        present(navVC, animated: true, completion: nil)
+//        let nextVC=SecondPaperViewController()
+//        let navVC=UINavigationController(rootViewController: nextVC)
+//        navVC.modalPresentationStyle = .fullScreen
+//        present(navVC, animated: true, completion: nil)
+//
+//
+        
+        let controller = SecondPaperViewController()
+        controller.delegate = self
+        
+        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
 
@@ -71,4 +78,15 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     }
     */
 
+   
+}
+extension SecondPaperListViewController: AddSecondPaperDelegate {
+    
+    func addSecondPaper(secondPaper: SecondPaperList) {
+        self.dismiss(animated: true) {
+            print("hello");
+            self.secondPaperArray.append(secondPaper)
+            self.tableView.reloadData()
+        }
+    }
 }
