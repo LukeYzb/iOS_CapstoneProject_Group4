@@ -22,7 +22,10 @@ class FirstPaperViewController: UIViewController {
         
         
         //merge data, generate file
-        saveData()
+        //files
+        let file1:String = "1. aaa1 \n fasf [1] \n fasf \n fasf \n 2. aaa2 \n asdf \n 3. aaa3"
+        let file2:String = "1. aaa1 \n asga [2] \n asga \n 2. aaa2 \n sfss \n 3. aaa3"
+        saveData(str1: file1,str2: file2)
         
         if(checkExist()){
             print("File exists")
@@ -35,8 +38,6 @@ class FirstPaperViewController: UIViewController {
         
         //show data instruction
         dataInstruction()
-        
-        
         
     }
     
