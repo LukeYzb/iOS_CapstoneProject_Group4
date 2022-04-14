@@ -15,25 +15,68 @@ func file2(str:String)->String{
     return str
 }
 
-//merge files
+//modify reference number and merge files
 func merge(str1:String,str2:String)->String{
     //merge result
     var result:String = ""
     
+    
+    //modify reference number sequence
+    //the second paper string
+    var str2a:String = ""
+    var str2b = str2
+    
+    //find the last ref num in the first paper
+    let i1 = str1.lastIndex(of: "[")
+    //move the index back for 1
+    let i1a = str1.index(i1!, offsetBy: 1)
+    let i2 = str1.lastIndex(of: "]")
+    let num1a = str1[i1a..<i2!]
+    let num1:Int = Int(num1a)!
+    
+    //modify the ref num in the second paper
+    //get the frequency of "["
+    var numCount:Int = 0
+    for item in str2{
+        if(item == "["){
+            numCount+=1
+        }
+        
+    }
+    print(numCount)
+    
+    for _ in 0..<numCount{
+        let i5 = str2b.firstIndex(of: "[")
+        let i5a = str2b.index(i5!, offsetBy: 1)
+        let i6 = str2b.firstIndex(of: "]")
+        let num3a = str2b[i5a..<i6!]
+        var num3:Int = Int(num3a)!
+        num3+=num1
+        
+        str2a+=str2b[str2b.startIndex..<i5a]
+        str2a+=String(num3)+"]"
+        
+        str2b.removeSubrange(str2b.startIndex...i6!)
+    }
+    str2a+=str2b
+    //print(str2a)
+    
+    
+    //merge the file
     //split
     let arr1:[Substring] = str1.split(separator: "\n")
     //change substring array to string array
     var arr1a:[String] = []
     for item in arr1 {
-        arr1a.append("\(item)")
+        arr1a.append("\(item) \n")
     }
     
     //split
-    let arr2:[Substring] = str2.split(separator: "\n")
+    let arr2:[Substring] = str2a.split(separator: "\n")
     //change substring array to string array
     var arr2a:[String] = []
     for item in arr2 {
-        arr2a.append("\(item)")
+        arr2a.append("\(item) \n")
     }
     
     //2-dimension array arr3, store arr1a index and arr2a index
