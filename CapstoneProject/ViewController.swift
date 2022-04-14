@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     @IBAction func startMergingButton(_ sender: UIButton) {
         //show 'first paper' page with navigation bar
-        let nextVC=FirstPaperViewController()
+        let nextVC=HomeTabsController()
         let navVC=UINavigationController(rootViewController: nextVC)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
