@@ -27,6 +27,7 @@
 		FA5C8FE927FF99730074BC3A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C8FE727FF99730074BC3A /* RegisterViewController.xib */; };
 		FABBEE4B28076C4F005F0199 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBEE4928076C4F005F0199 /* ResultViewController.swift */; };
 		FABBEE4C28076C4F005F0199 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABBEE4A28076C4F005F0199 /* ResultViewController.xib */; };
+		FABBEE4F28088278005F0199 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FABBEE4E28088278005F0199 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABBEE4F28088278005F0199 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +207,9 @@
 			dependencies = (
 			);
 			name = CapstoneProject;
+			packageProductDependencies = (
+				FABBEE4E28088278005F0199 /* FirebaseAuth */,
+			);
 			productName = CapstoneProject;
 			productReference = FA12C76527E4F6CF00798941 /* CapstoneProject.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +238,9 @@
 				Base,
 			);
 			mainGroup = FA12C75C27E4F6CF00798941;
+			packageReferences = (
+				FABBEE4D28088278005F0199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FA12C76627E4F6CF00798941 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -494,6 +502,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FABBEE4D28088278005F0199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FABBEE4E28088278005F0199 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABBEE4D28088278005F0199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA12C75D27E4F6CF00798941 /* Project object */;
 }
