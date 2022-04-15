@@ -23,43 +23,51 @@ func merge(str1:String,str2:String)->String{
     if(str1 != "" && str2 != ""){
         //modify reference number sequence
         //the second paper string
-        var str2a:String = ""
+        var str2a = str2
         var str2b = str2
         
         //find the last ref num in the first paper
         let i1 = str1.lastIndex(of: "[")
-        //move the index back for 1
-        let i1a = str1.index(i1!, offsetBy: 1)
-        let i2 = str1.lastIndex(of: "]")
-        let num1a = str1[i1a..<i2!]
-        let num1:Int = Int(num1a)!
-        
-        //modify the ref num in the second paper
-        //get the frequency of "["
-        var numCount:Int = 0
-        for item in str2{
-            if(item == "["){
-                numCount+=1
+        //if there is ref num in the first paper, modify ref num in the second one
+        if(i1 != nil){
+            //move the index back for 1
+            let i1a = str1.index(i1!, offsetBy: 1)
+            let i2 = str1.lastIndex(of: "]")
+            let num1a = str1[i1a..<i2!]
+            let num1:Int = Int(num1a)!
+            
+            //modify the ref num in the second paper
+            //get the frequency of "["
+            var numCount:Int = 0
+            for item in str2{
+                if(item == "["){
+                    numCount+=1
+                }
+                
             }
+            //print(numCount)
             
+            //if there is ref num in the second paper, modify it
+            if(numCount > 0){
+                str2a = ""
+                for _ in 0..<numCount{
+                    let i5 = str2b.firstIndex(of: "[")
+                    let i5a = str2b.index(i5!, offsetBy: 1)
+                    let i6 = str2b.firstIndex(of: "]")
+                    let num3a = str2b[i5a..<i6!]
+                    var num3:Int = Int(num3a)!
+                    num3+=num1
+                    
+                    str2a+=str2b[str2b.startIndex..<i5a]
+                    str2a+=String(num3)+"]"
+                    
+                    str2b.removeSubrange(str2b.startIndex...i6!)
+                }
+                str2a+=str2b
+                //print(str2a)
+            }
         }
-        print(numCount)
         
-        for _ in 0..<numCount{
-            let i5 = str2b.firstIndex(of: "[")
-            let i5a = str2b.index(i5!, offsetBy: 1)
-            let i6 = str2b.firstIndex(of: "]")
-            let num3a = str2b[i5a..<i6!]
-            var num3:Int = Int(num3a)!
-            num3+=num1
-            
-            str2a+=str2b[str2b.startIndex..<i5a]
-            str2a+=String(num3)+"]"
-            
-            str2b.removeSubrange(str2b.startIndex...i6!)
-        }
-        str2a+=str2b
-        //print(str2a)
         
         
         //merge the file
@@ -89,9 +97,9 @@ func merge(str1:String,str2:String)->String{
         for (idx1,item1) in arr1a.enumerated(){
             for (idx2,item2) in arr2a.enumerated(){
                 if(item1==item2){
-                    //arr3[index][0]=arr1a.firstIndex(of: item1) ?? <#default value#>
-                    //arr3[index][1]=arr2a.firstIndex(of: item2) ?? <#default value#>
+                    //the index of same question in str1 array
                     arr3[0].append(idx1)
+                    //the index of same question in str2 array
                     arr3[1].append(idx2)
                 }
             }
@@ -102,24 +110,42 @@ func merge(str1:String,str2:String)->String{
         var idx1b:Int=0
         for (idx,_) in arr3[0].enumerated(){
             if(idx > 0){
+                //add question and answers for this 'same question' in str1 array
                 for idx1 in arr3[0][idx-1]..<arr3[0][idx] {
                     result+=arr1a[idx1]
+                    //the index of the last 'same question', which is used later
                     idx1a=arr3[0][idx]
                 }
+                //add question and answers for this 'same question' in str2 array
                 for idx2 in arr3[1][idx-1]..<arr3[1][idx]{
                     result+=arr2a[idx2]
+                    //the index of the last 'same question', which is used later
                     idx1b=arr3[1][idx]
                 }
             }
         }
+        
         var arr1A:[String] = []
         var arr2A:[String] = []
-        for idx1 in idx1a...arr1a.count-1 {
-            arr1A.append(arr1a[idx1])
+        
+        //get the left part with the index of the last 'same question'
+        if(arr1a.count>0){
+            for idx1 in idx1a...arr1a.count-1 {
+                arr1A.append(arr1a[idx1])
+            }
         }
-        for idx2 in idx1b...arr2a.count-1 {
-            arr2A.append(arr2a[idx2])
+        else{
+            arr1A.append(arr1a[0])
         }
+        if(arr2a.count>0){
+            for idx2 in idx1b...arr2a.count-1 {
+                arr2A.append(arr2a[idx2])
+            }
+        }
+        else{
+            arr2A.append(arr2a[0])
+        }
+        
         for item in arr1A{
             result+=item
         }
@@ -138,7 +164,7 @@ func merge(str1:String,str2:String)->String{
     }
     
     //show merge result
-    print(result)
+    //print(result)
     return result
 }
 
