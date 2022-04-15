@@ -59,6 +59,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
 //            catch { print("already logged out") }
 //
 //            navigationController?.popToRootViewController(animated: true)
+        
+        //go back to login page
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
