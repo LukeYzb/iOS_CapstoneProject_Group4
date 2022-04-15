@@ -8,7 +8,9 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+   
+    var selectedSecondPaper:SecondPaperList? = nil;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,8 +18,11 @@ class ResultViewController: UIViewController {
     }
 
     @IBAction func homePageButtom(_ sender: UIButton) {
-    }
+        navigationController?.popToRootViewController(animated: true)}
     
+    @IBAction func onAnotherPageSelected(_ sender: UIButton) {
+         navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

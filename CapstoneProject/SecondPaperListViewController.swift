@@ -10,7 +10,7 @@ import UIKit
 class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var secondPaperArray: [SecondPaperList] = [
-        SecondPaperList(time: "17:41", name: "Zhibin Yu")
+        SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "")
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -52,12 +52,27 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let resultViewController = ResultViewController()
+        resultViewController.selectedSecondPaper = secondPaperArray[indexPath.row];
+        navigationController?.pushViewController(resultViewController, animated: true)
+        
+    }
+    
     @IBAction func addSecondPaperButton(_ sender: UIButton) {
         //show 'add second paper' page with navigation bar
-        let nextVC=SecondPaperViewController()
-        let navVC=UINavigationController(rootViewController: nextVC)
-        navVC.modalPresentationStyle = .fullScreen
-        present(navVC, animated: true, completion: nil)
+//        let nextVC=SecondPaperViewController()
+//        let navVC=UINavigationController(rootViewController: nextVC)
+//        navVC.modalPresentationStyle = .fullScreen
+//        present(navVC, animated: true, completion: nil)
+//
+//
+        
+        let controller = SecondPaperViewController()
+        controller.delegate = self
+        
+        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
 
@@ -71,4 +86,15 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     }
     */
 
+   
+}
+extension SecondPaperListViewController: AddSecondPaperDelegate {
+    
+    func addSecondPaper(secondPaper: SecondPaperList) {
+        self.dismiss(animated: true) {
+            print("hello");
+            self.secondPaperArray.append(secondPaper)
+            self.tableView.reloadData()
+        }
+    }
 }
