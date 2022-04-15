@@ -10,7 +10,7 @@ import UIKit
 class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var secondPaperArray: [SecondPaperList] = [
-        SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "")
+        SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "1. aaa1 \n asga [1] \n asga \n 2. aaa2 \n sfss [2] \n 3. aaa3 \n [1] hello \n [2] world")
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -89,10 +89,9 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
    
 }
 extension SecondPaperListViewController: AddSecondPaperDelegate {
-    
     func addSecondPaper(secondPaper: SecondPaperList) {
         self.dismiss(animated: true) {
-            print("hello");
+            print("Add second paper on list");
             self.secondPaperArray.append(secondPaper)
             self.tableView.reloadData()
         }

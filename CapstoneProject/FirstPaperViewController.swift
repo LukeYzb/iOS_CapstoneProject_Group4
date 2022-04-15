@@ -7,8 +7,16 @@
 
 import UIKit
 
-class FirstPaperViewController: UIViewController {
+protocol FirstPaperDelegate {
+    func addFirstPaper(resultPaperName: String, firstPaperContent: String)
+}
 
+class FirstPaperViewController: UIViewController {
+    var delegate: FirstPaperDelegate?
+
+    @IBOutlet weak var resultPaperNameTextField: UITextField!
+    @IBOutlet weak var firstPaperContentTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,25 +28,12 @@ class FirstPaperViewController: UIViewController {
         //show back button on top left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(backButtonPressed))
         
-        
-        //merge data, generate file
-        //files
-        let file1:String = "1. aaa1 \n fasf [1] \n fasf \n fasf [2] \n 2. aaa2 \n asdf \n 3. aaa3 \n [1] hello \n [2] world"
-        let file2:String = "1. aaa1 \n asga [1] \n asga \n 2. aaa2 \n sfss [2] \n 3. aaa3 \n [1] hello \n [2] world"
-        saveData(str1: file1,str2: file2)
-        
-        if(checkExist()){
-            print("File exists")
-            readData()
-            
-            //deleteData()
-        }else{
-            print("File Not Exist!")
-        }
-        
-        //show data instruction
-        dataInstruction()
-        
+    }
+    
+    //close virtual keyboard while clicking outside of text field
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        resultPaperNameTextField.resignFirstResponder()
+        firstPaperContentTextField.resignFirstResponder()
     }
     
     //press back button: return
@@ -48,11 +43,12 @@ class FirstPaperViewController: UIViewController {
     }
     
     @IBAction func secondPaperListButton(_ sender: UIButton) {
+        delegate?.addFirstPaper(resultPaperName: resultPaperNameTextField.text!, firstPaperContent: firstPaperContentTextField.text!)
+        
         //show 'second paper list' page with navigation bar
         let nextVC=SecondPaperListViewController()
-      
         navigationController?.pushViewController(nextVC, animated: true)
-         }
+    }
 
 
     /*

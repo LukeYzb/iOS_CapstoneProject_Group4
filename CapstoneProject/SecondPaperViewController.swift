@@ -15,8 +15,10 @@ protocol AddSecondPaperDelegate {
 
 class SecondPaperViewController: UIViewController {
     var delegate: AddSecondPaperDelegate?
+    
     @IBOutlet weak var secondPaperName: UITextField!
-    @IBOutlet weak var secondPaper: UITextView!
+    @IBOutlet weak var secondPaperContentTextFiled: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,12 @@ class SecondPaperViewController: UIViewController {
         navigationItem.title = "Add Second Paper"
         //show back button on top left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(backButtonPressed))
+    }
+    
+    //close virtual keyboard while clicking outside of text field
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        secondPaperName.resignFirstResponder()
+        secondPaperContentTextFiled.resignFirstResponder()
     }
     
     //press back button: return
@@ -42,7 +50,7 @@ class SecondPaperViewController: UIViewController {
         let date = Date()
         let dateString = dateFormatter.string(from: date)
         
-        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? "" , content: secondPaper.text))
+        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? "" , content: secondPaperContentTextFiled.text!))
         
     }
     
