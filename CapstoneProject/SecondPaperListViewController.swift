@@ -10,7 +10,7 @@ import UIKit
 class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var secondPaperArray: [SecondPaperList] = [
-        SecondPaperList(time: "17:41", name: "Zhibin Yu")
+        SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "")
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -50,6 +50,14 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         cell.timeLabel.text=secondPaperArray[indexPath.row].time
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let resultViewController = ResultViewController()
+        resultViewController.selectedSecondPaper = secondPaperArray[indexPath.row];
+        navigationController?.pushViewController(resultViewController, animated: true)
+        
     }
     
     @IBAction func addSecondPaperButton(_ sender: UIButton) {

@@ -42,7 +42,7 @@ class SecondPaperViewController: UIViewController {
         let date = Date()
         let dateString = dateFormatter.string(from: date)
         
-        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? ""))
+        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? "" , content: secondPaper.text))
         
     }
     

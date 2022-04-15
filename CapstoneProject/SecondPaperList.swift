@@ -11,4 +11,6 @@ struct SecondPaperList {
     //set second paper time and name
     var time: String
     var name: String
+    var content: String
+
 }
