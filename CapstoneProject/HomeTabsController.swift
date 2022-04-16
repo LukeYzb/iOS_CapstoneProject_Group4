@@ -15,10 +15,15 @@ class HomeTabsController: UITabBarController {
         let homeVC = FirstPaperViewController();
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
         
+        let groupVC = GrouppageViewController();
+        groupVC.tabBarItem = UITabBarItem(title: "Group", image: UIImage.add, tag: 0)
+        
         let profileVC = ProfileViewController();
         profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "user"), tag: 0)
         
-        viewControllers = [homeVC, profileVC]
+       
+        
+        viewControllers = [homeVC, groupVC, profileVC]
     }
     
 

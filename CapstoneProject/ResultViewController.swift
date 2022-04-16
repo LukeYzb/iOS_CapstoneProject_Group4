@@ -54,6 +54,56 @@ class ResultViewController: UIViewController {
     @IBAction func onAnotherPageSelected(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
+    func convertToPdfFileAndShare(){
+        
+        let fmt = UIMarkupTextPrintFormatter(markupText: resultPaperTextView.text)
+        
+        // 2. Assign print formatter to UIPrintPageRenderer
+        let render = UIPrintPageRenderer()
+        render.addPrintFormatter(fmt, startingAtPageAt: 0)
+        
+        // 3. Assign paperRect and printableRect
+        let page = CGRect(x: 0, y: 0, width: 595.2, height: 841.8) // A4, 72 dpi
+        render.setValue(page, forKey: "paperRect")
+        render.setValue(page, forKey: "printableRect")
+        
+        // 4. Create PDF context and draw
+        let pdfData = NSMutableData()
+        UIGraphicsBeginPDFContextToData(pdfData, .zero, nil)
+        
+        for i in 0..<render.numberOfPages {
+            UIGraphicsBeginPDFPage();
+            render.drawPage(at: i, in: UIGraphicsGetPDFContextBounds())
+        }
+        
+        UIGraphicsEndPDFContext();
+        
+        guard let outputURL = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("output").appendingPathExtension("pdf")
+            else { fatalError("Destination URL not created") }
+        
+        pdfData.write(to: outputURL, atomically: true)
+        print("open \(outputURL.path)")
+        
+        if FileManager.default.fileExists(atPath: outputURL.path){
+            
+            let url = URL(fileURLWithPath: outputURL.path)
+            let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView=self.view
+         
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                if activityViewController.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
+                }
+            }
+            present(activityViewController, animated: true, completion: nil)
+
+        }
+        else {
+            print("document was not found")
+        }
+        
+    }
+
     /*
     // MARK: - Navigation
 
