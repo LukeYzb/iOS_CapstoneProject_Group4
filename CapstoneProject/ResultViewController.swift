@@ -71,9 +71,3 @@ class ResultViewController: UIViewController {
     */
 
 }
-extension ResultViewController:FirstPaperDelegate{
-    func addFirstPaper(resultPaperName: String, firstPaperContent: String) {
-        resultName = resultPaperName
-        file1 = firstPaperContent
-    }
-}

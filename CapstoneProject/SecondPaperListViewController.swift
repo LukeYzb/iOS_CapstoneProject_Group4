@@ -72,7 +72,6 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         
         let controller = SecondPaperViewController()
         controller.delegate = self
-        
         self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
