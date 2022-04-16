@@ -8,7 +8,7 @@
 import UIKit
 
 class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    var mergedPeperData:MergedFile?;
     var secondPaperArray: [SecondPaperList] = [
         SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "1. aaa1 \n asga [1] \n asga \n 2. aaa2 \n sfss [2] \n 3. aaa3 \n [1] hello \n [2] world")
     ]
@@ -55,7 +55,8 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let resultViewController = ResultViewController()
-        resultViewController.selectedSecondPaper = secondPaperArray[indexPath.row];
+//        mergedPeperData?.secondPageContent = secondPaperArray[indexPath].contentl
+        resultViewController.mergedPeperData = mergedPeperData;
         navigationController?.pushViewController(resultViewController, animated: true)
         
     }

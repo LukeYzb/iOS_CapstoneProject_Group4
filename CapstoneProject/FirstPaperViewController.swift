@@ -44,9 +44,12 @@ class FirstPaperViewController: UIViewController {
     
     @IBAction func secondPaperListButton(_ sender: UIButton) {
         delegate?.addFirstPaper(resultPaperName: resultPaperNameTextField.text!, firstPaperContent: firstPaperContentTextField.text!)
-        
+        let mergedFileName:String =  resultPaperNameTextField.text ?? "";
+        let firstFileContent:String =  firstPaperContentTextField.text ?? "";
+
         //show 'second paper list' page with navigation bar
-        let nextVC=SecondPaperListViewController()
+        let nextVC=SecondPaperListViewController();
+        nextVC.mergedPeperData  = MergedFile(finalFileName: mergedFileName, firstPageContent: firstFileContent, secondPageContent: "");
         navigationController?.pushViewController(nextVC, animated: true)
     }
 

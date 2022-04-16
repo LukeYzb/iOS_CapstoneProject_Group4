@@ -9,7 +9,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
    
-    var selectedSecondPaper:SecondPaperList? = nil;
+    var mergedPeperData:MergedFile? = nil;
     
     //result file name
     var resultName = ""
@@ -23,7 +23,13 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        resultName = mergedPeperData?.finalFileName ?? "";
+        file1 = mergedPeperData?.firstPageContent ?? "";
+        file2 = mergedPeperData?.secondPageContent ?? "";
+        resultPaperNameLabel.text = resultName;
+        resultPaperTextView.text = file1 + " " + file2;
+        
+        
         // Do any additional setup after loading the view.
         
         //merge data, generate file
