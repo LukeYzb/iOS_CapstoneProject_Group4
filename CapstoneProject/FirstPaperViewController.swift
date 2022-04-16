@@ -7,12 +7,7 @@
 
 import UIKit
 
-protocol FirstPaperDelegate {
-    func addFirstPaper(resultPaperName: String, firstPaperContent: String)
-}
-
 class FirstPaperViewController: UIViewController {
-    var delegate: FirstPaperDelegate?
 
     @IBOutlet weak var resultPaperNameTextField: UITextField!
     @IBOutlet weak var firstPaperContentTextField: UITextField!
@@ -43,7 +38,6 @@ class FirstPaperViewController: UIViewController {
     }
     
     @IBAction func secondPaperListButton(_ sender: UIButton) {
-        delegate?.addFirstPaper(resultPaperName: resultPaperNameTextField.text!, firstPaperContent: firstPaperContentTextField.text!)
         
         //show 'second paper list' page with navigation bar
         let nextVC=SecondPaperListViewController()
