@@ -44,14 +44,22 @@ class SecondPaperViewController: UIViewController {
     }
 
     @IBAction func onAddButtonClicked(_ sender: Any) {
-        let dateFormatter : DateFormatter = DateFormatter()
-        //  dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormatter.dateFormat = "HH:mm"
-        let date = Date()
-        let dateString = dateFormatter.string(from: date)
-        
-        delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? "" , content: secondPaperContentTextFiled.text!))
-        
+        //if name or content is empty, show alert
+        if(secondPaperName.text=="" || secondPaperContentTextFiled.text==""){
+            //set alert
+            let alertController = UIAlertController(title: "Empty name or content!", message: nil, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
+        else{
+            let dateFormatter : DateFormatter = DateFormatter()
+            //  dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.dateFormat = "HH:mm"
+            let date = Date()
+            let dateString = dateFormatter.string(from: date)
+            
+            delegate?.addSecondPaper(secondPaper: SecondPaperList(time:dateString , name: secondPaperName.text ?? "" , content: secondPaperContentTextFiled.text!))
+        }
     }
     
     /*

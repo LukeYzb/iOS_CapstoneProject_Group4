@@ -20,36 +20,57 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6u-vy-GRi">
-                    <rect key="frame" x="166" y="371" width="82" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Add"/>
-                    <connections>
-                        <action selector="onAddButtonClicked:" destination="-1" eventType="touchUpInside" id="lim-0R-rnX"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Paper Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2i-sd-II6">
-                    <rect key="frame" x="84" y="117" width="246" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste Second Paper Content Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bov-VU-TMY">
-                    <rect key="frame" x="84" y="196" width="246" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kgu-RF-PI6">
+                    <rect key="frame" x="50" y="382" width="314" height="139"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Paper Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2i-sd-II6">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste Second Paper Content Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bov-VU-TMY">
+                            <rect key="frame" x="0.0" y="54" width="314" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6u-vy-GRi">
+                            <rect key="frame" x="0.0" y="108" width="314" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Add">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="onAddButtonClicked:" destination="-1" eventType="touchUpInside" id="lim-0R-rnX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="I2i-sd-II6" secondAttribute="trailing" id="3Jw-Yg-8Op"/>
+                        <constraint firstAttribute="trailing" secondItem="bov-VU-TMY" secondAttribute="trailing" id="49V-AD-rXs"/>
+                        <constraint firstItem="I2i-sd-II6" firstAttribute="leading" secondItem="Kgu-RF-PI6" secondAttribute="leading" id="AKc-Z7-rro"/>
+                        <constraint firstAttribute="trailing" secondItem="F6u-vy-GRi" secondAttribute="trailing" id="Nhr-Hg-pX0"/>
+                        <constraint firstItem="F6u-vy-GRi" firstAttribute="leading" secondItem="Kgu-RF-PI6" secondAttribute="leading" id="Z7E-IL-4kT"/>
+                        <constraint firstItem="bov-VU-TMY" firstAttribute="leading" secondItem="Kgu-RF-PI6" secondAttribute="leading" id="eAi-R2-FaN"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kgu-RF-PI6" secondAttribute="trailing" constant="50" id="c6r-TO-ssv"/>
+                <constraint firstItem="bov-VU-TMY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="qRy-HZ-2UI"/>
+                <constraint firstItem="Kgu-RF-PI6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="rwY-BT-raj"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="54.910714285714285"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 import UIKit
 
 class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    var mergedPeperData:MergedFile?;
     var secondPaperArray: [SecondPaperList] = [
         SecondPaperList(time: "17:41", name: "Zhibin Yu",content: "1. aaa1 \n asga [1] \n asga \n 2. aaa2 \n sfss [2] \n 3. aaa3 \n [1] hello \n [2] world")
     ]
@@ -25,6 +25,8 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         navigationItem.title = "Second Paper List"
         //show back button on top left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(backButtonPressed))
+        //show back button on top left
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
         
         //set tableview
         tableView.delegate=self
@@ -37,6 +39,14 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     @objc
     func backButtonPressed() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    //press add button: add
+    @objc
+    func addButtonPressed() {
+        let controller = SecondPaperViewController()
+        controller.delegate = self
+        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,23 +65,10 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let resultViewController = ResultViewController()
-        resultViewController.selectedSecondPaper = secondPaperArray[indexPath.row];
+        mergedPeperData?.secondPageContent = secondPaperArray[indexPath.row].content
+        resultViewController.mergedPeperData = mergedPeperData;
         navigationController?.pushViewController(resultViewController, animated: true)
         
-    }
-    
-    @IBAction func addSecondPaperButton(_ sender: UIButton) {
-        //show 'add second paper' page with navigation bar
-//        let nextVC=SecondPaperViewController()
-//        let navVC=UINavigationController(rootViewController: nextVC)
-//        navVC.modalPresentationStyle = .fullScreen
-//        present(navVC, animated: true, completion: nil)
-//
-//
-        
-        let controller = SecondPaperViewController()
-        controller.delegate = self
-        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
 

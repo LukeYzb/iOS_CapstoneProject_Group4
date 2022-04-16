@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843CFB52280A345100E92610 /* MergedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CFB51280A345100E92610 /* MergedFile.swift */; };
 		C316B12E280814C7001EB344 /* HomeTabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C316B12D280814C7001EB344 /* HomeTabsController.swift */; };
 		C316B1312808199E001EB344 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C316B12F2808199E001EB344 /* ProfileViewController.swift */; };
 		C316B1322808199E001EB344 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C316B1302808199E001EB344 /* ProfileViewController.xib */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843CFB51280A345100E92610 /* MergedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedFile.swift; sourceTree = "<group>"; };
 		C316B12D280814C7001EB344 /* HomeTabsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabsController.swift; sourceTree = "<group>"; };
 		C316B12F2808199E001EB344 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C316B1302808199E001EB344 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5C8FCE27FF91120074BC3A /* SecondPaperList.swift */,
+				843CFB51280A345100E92610 /* MergedFile.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				E8D2A888280A412B00B60D31 /* JoingroupViewController.swift in Sources */,
 				C316B12E280814C7001EB344 /* HomeTabsController.swift in Sources */,
 				FA12C76B27E4F6CF00798941 /* SceneDelegate.swift in Sources */,
+				843CFB52280A345100E92610 /* MergedFile.swift in Sources */,
 				FA5C8FE427FF977F0074BC3A /* SecondPaperViewController.swift in Sources */,
 				FA5C8FD927FF94FD0074BC3A /* MergeFiles.swift in Sources */,
 				C316B1312808199E001EB344 /* ProfileViewController.swift in Sources */,
