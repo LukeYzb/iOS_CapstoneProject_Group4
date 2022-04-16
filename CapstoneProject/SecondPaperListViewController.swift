@@ -25,6 +25,8 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         navigationItem.title = "Second Paper List"
         //show back button on top left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(backButtonPressed))
+        //show back button on top left
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
         
         //set tableview
         tableView.delegate=self
@@ -37,6 +39,14 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     @objc
     func backButtonPressed() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    //press add button: add
+    @objc
+    func addButtonPressed() {
+        let controller = SecondPaperViewController()
+        controller.delegate = self
+        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,20 +68,6 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
         resultViewController.selectedSecondPaper = secondPaperArray[indexPath.row];
         navigationController?.pushViewController(resultViewController, animated: true)
         
-    }
-    
-    @IBAction func addSecondPaperButton(_ sender: UIButton) {
-        //show 'add second paper' page with navigation bar
-//        let nextVC=SecondPaperViewController()
-//        let navVC=UINavigationController(rootViewController: nextVC)
-//        navVC.modalPresentationStyle = .fullScreen
-//        present(navVC, animated: true, completion: nil)
-//
-//
-        
-        let controller = SecondPaperViewController()
-        controller.delegate = self
-        self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
 
 

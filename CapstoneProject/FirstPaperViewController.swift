@@ -41,7 +41,12 @@ class FirstPaperViewController: UIViewController {
         
         //show 'second paper list' page with navigation bar
         let nextVC=SecondPaperListViewController()
-        navigationController?.pushViewController(nextVC, animated: true)
+        let navVC=UINavigationController(rootViewController: nextVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true, completion: nil)
+        //show 'second paper list' page with navigation bar
+        //let nextVC=SecondPaperListViewController()
+        //navigationController?.pushViewController(nextVC, animated: true)
     }
 
 

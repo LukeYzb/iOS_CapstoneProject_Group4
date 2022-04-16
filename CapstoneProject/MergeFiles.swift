@@ -192,14 +192,14 @@ var dataUrl2:URL{
 }
 
 //show data pass instruction
-func dataInstruction(){
+func dataInstruction()->String{
     var dataUrl2a:String = dataUrl2.absoluteString
     
     //delete first 5 letters
     let range = dataUrl2a.startIndex...(dataUrl2a.index(dataUrl2a.startIndex, offsetBy: 4))
     dataUrl2a.removeSubrange(range)
     
-    print("Please open 'Finder', press Command+Shift+G, input \(dataUrl2a), and find your file.")
+    return "Please open 'Finder', press Command+Shift+G, input \(dataUrl2a), and find your file."
 }
 
 //read data
