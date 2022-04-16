@@ -20,43 +20,65 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paste First Paper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-t6-Y62">
-                    <rect key="frame" x="143" y="217" width="129" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Paper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-t6-Y62">
+                    <rect key="frame" x="138.5" y="296" width="137" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-4l-HnY">
-                    <rect key="frame" x="128" y="553" width="159" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Select Second Paper"/>
-                    <connections>
-                        <action selector="secondPaperListButton:" destination="-1" eventType="touchUpInside" id="OnP-f5-THK"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Merged Paper Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="018-iu-MXc">
-                    <rect key="frame" x="123" y="273" width="169" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste First Paper Content Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8E-rT-tdd">
-                    <rect key="frame" x="97" y="355" width="220" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JFk-Xp-vrq">
+                    <rect key="frame" x="50" y="382" width="314" height="139"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Merged Paper Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="018-iu-MXc">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste First Paper Content Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8E-rT-tdd">
+                            <rect key="frame" x="0.0" y="54" width="314" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-4l-HnY">
+                            <rect key="frame" x="0.0" y="108" width="314" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Select Second Paper">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="secondPaperListButton:" destination="-1" eventType="touchUpInside" id="OnP-f5-THK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="f8E-rT-tdd" secondAttribute="trailing" id="3T7-hn-kYp"/>
+                        <constraint firstItem="nDe-4l-HnY" firstAttribute="leading" secondItem="JFk-Xp-vrq" secondAttribute="leading" id="CM9-dC-TBi"/>
+                        <constraint firstItem="018-iu-MXc" firstAttribute="leading" secondItem="JFk-Xp-vrq" secondAttribute="leading" id="Nqb-Vf-oSR"/>
+                        <constraint firstItem="f8E-rT-tdd" firstAttribute="leading" secondItem="JFk-Xp-vrq" secondAttribute="leading" id="afV-lj-ANn"/>
+                        <constraint firstAttribute="trailing" secondItem="nDe-4l-HnY" secondAttribute="trailing" id="i2i-KH-4YO"/>
+                        <constraint firstAttribute="trailing" secondItem="018-iu-MXc" secondAttribute="trailing" id="tfG-ns-74R"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="f8E-rT-tdd" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="JDz-wY-4JD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JFk-Xp-vrq" secondAttribute="trailing" constant="50" id="az1-SN-zDX"/>
+                <constraint firstItem="JFk-Xp-vrq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="o8C-n7-wjz"/>
+                <constraint firstItem="e1F-t6-Y62" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ugP-vU-12e"/>
+                <constraint firstItem="JFk-Xp-vrq" firstAttribute="top" secondItem="e1F-t6-Y62" secondAttribute="bottom" constant="50" id="zo5-ai-y6h"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

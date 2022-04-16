@@ -20,6 +20,7 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var resultPaperTextView: UITextView!
     @IBOutlet weak var resultPaperNameLabel: UILabel!
+    @IBOutlet weak var instructionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,8 @@ class ResultViewController: UIViewController {
         }
         
         //show data instruction
-        dataInstruction()
+        let instruction:String = dataInstruction()
+        instructionTextView.text = instruction
         
         //show result paper name
         resultPaperNameLabel.text = resultName
@@ -53,9 +55,18 @@ class ResultViewController: UIViewController {
         resultPaperTextView.text = merge(str1: file1, str2: file2)
         
     }
+    
+    //close virtual keyboard while clicking outside of text field
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        resultPaperTextView.resignFirstResponder()
+        instructionTextView.resignFirstResponder()
+    }
 
     @IBAction func homePageButtom(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)}
+        dismiss(animated: true, completion: nil)
+        //navigationController?.popToRootViewController(animated: true)
+        
+    }
     
     @IBAction func onAnotherPageSelected(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)

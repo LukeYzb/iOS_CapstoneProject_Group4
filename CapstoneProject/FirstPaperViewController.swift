@@ -51,6 +51,7 @@ class FirstPaperViewController: UIViewController {
         let nextVC=SecondPaperListViewController();
         nextVC.mergedPeperData  = MergedFile(finalFileName: mergedFileName, firstPageContent: firstFileContent, secondPageContent: "");
         navigationController?.pushViewController(nextVC, animated: true)
+
     }
 
 
