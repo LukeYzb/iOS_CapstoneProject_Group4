@@ -55,7 +55,7 @@ class SecondPaperListViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let resultViewController = ResultViewController()
-//        mergedPeperData?.secondPageContent = secondPaperArray[indexPath].contentl
+        mergedPeperData?.secondPageContent = secondPaperArray[indexPath.row].content
         resultViewController.mergedPeperData = mergedPeperData;
         navigationController?.pushViewController(resultViewController, animated: true)
         
